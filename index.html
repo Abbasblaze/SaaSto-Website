@@ -68,7 +68,7 @@
 
     <main class="p-3 flex bg-white justify-between items-center mt-36">
       <div class="translate-x-32 mb-auto">
-        <img src="./img/Image.png" alt="" />
+        <img src="./img/Image.png" alt="" class="hidden sm:block" />
       </div>
       <div class="mb-36">
         <h1 class="font-bold text-5xl">
@@ -86,13 +86,16 @@
         </button>
       </div>
       <div class="">
-        <img src="img/Card screens.png" alt="" />
+        <img src="img/Card screens.png" alt="" class="hidden sm:block" />
       </div>
     </main>
     <!-- Header Icons -->
 
     <main>
-      <div class="flex space-x-8 mt-40 ml-96 gap-5">
+      <div
+        class="flex flex-wrap justify-center md:justify-start space-x-8 md:space-x-5 mt-10 md:mt-40 ml-0 md:ml-96 gap-5"
+      >
+        <!-- First Box -->
         <div
           class="flex flex-col items-center space-y-2 w-32 h-32 bg-purple-100 p-10 rounded-3xl"
         >
@@ -100,11 +103,12 @@
             <i class="ri-user-line ri-2x"></i>
           </div>
         </div>
-        <div class="mt-8">
+        <div class="mt-8 text-center md:text-left">
           <h2 class="text-5xl font-bold text-gray-800">15k+</h2>
           <p class="text-gray-600 text-lg">Active user</p>
         </div>
 
+        <!-- Second Box -->
         <div
           class="flex flex-col items-center space-y-2 w-32 h-32 bg-yellow-100 p-10 rounded-3xl"
         >
@@ -112,11 +116,12 @@
             <i class="ri-download-cloud-line ri-2x"></i>
           </div>
         </div>
-        <div class="mt-8">
+        <div class="mt-8 text-center md:text-left">
           <h2 class="text-5xl font-bold text-gray-800">30k</h2>
           <p class="text-gray-600 text-lg">Total Download</p>
         </div>
 
+        <!-- Third Box -->
         <div
           class="flex flex-col items-center space-y-2 w-32 h-32 bg-green-100 p-10 rounded-3xl"
         >
@@ -124,7 +129,7 @@
             <i class="ri-group-line ri-2x"></i>
           </div>
         </div>
-        <div class="mt-8">
+        <div class="mt-8 text-center md:text-left">
           <h2 class="text-5xl font-bold text-gray-800">10k</h2>
           <p class="text-gray-600 text-lg">Customer</p>
         </div>
