@@ -31,18 +31,17 @@
       </a>
 
       <div id="nav-menu" class="hidden md:flex gap-8 items-center">
-        <a href="#" class="font-medium text-indigo-700 hover:text-indigo-400"
-          >Home<i class="ri-arrow-down-s-line"></i
+        <a href="#" class="font-medium text-indigo-700 hover:text-indigo-400">
+          Home<i class="ri-arrow-down-s-line"></i
         ></a>
-
         <a href="#" class="font-medium text-gray-700 hover:text-indigo-400"
           >About us</a
         >
-        <a href="#" class="font-medium text-gray-700 hover:text-indigo-400"
-          >Services<i class="ri-arrow-down-s-line"></i
+        <a href="#" class="font-medium text-gray-700 hover:text-indigo-400">
+          Services<i class="ri-arrow-down-s-line"></i
         ></a>
-        <a href="#" class="font-medium text-gray-700 hover:text-indigo-400"
-          >Blog<i class="ri-arrow-down-s-line"></i
+        <a href="#" class="font-medium text-gray-700 hover:text-indigo-400">
+          Blog<i class="ri-arrow-down-s-line"></i
         ></a>
         <a href="#" class="font-medium text-gray-700 hover:text-indigo-400"
           >Contact us</a
@@ -60,10 +59,50 @@
         </button>
       </div>
 
-      <button class="p-2 md:hidden" onclick="handleMenu()">
+      <button id="menu-button" class="p-2 md:hidden" onclick="handleMenu()">
         <i class="ri-menu-line text-gray-600"></i>
       </button>
-      <div class="fixed inset-0"></div>
+
+      <div
+        id="nav-dialog"
+        class="hidden fixed z-10 md:hidden bg-white inset-0 p-3"
+      >
+        <div id="nav-bar" class="flex justify-between">
+          <a href="#" id="brand" class="flex gap-2 items-center">
+            <img
+              class="object-cover max-w-12 max-h-12"
+              src="./img/Icon.png"
+              alt="logo"
+            />
+            <span class="text-lg font-bold text-indigo-900">SaaSto</span>
+          </a>
+          <button id="menu-button" class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="ri-close-line text-gray-600"></i>
+          </button>
+        </div>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >About us
+          </a>
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Services
+          </a>
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Blog
+          </a>
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Contact us
+          </a>
+        </div>
+      </div>
     </nav>
 
     <!-- Header -->
@@ -386,5 +425,6 @@
         <p>All Right Reserved @ plovr.com</p>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
